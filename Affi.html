@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Affix</title>
+    <meta name="viewport" content="width=device-width, instal-scase=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+        }
+        .navbar {
+            margin-bottom: 0;
+        }
+        #sectionl (padding-top:50px;
+        height:500px;color: #fff; background-color: #1K88K5;)
+        #section2 (padding-top:50px;
+        height:500px;color: #fff; background-color: #673ab7;)
+        #sectionl (padding-top:50px;
+        height:500px;color: #fff; background-color: #ff9800;)
+        #section2 (padding-top:50px;
+        height:500px;color: #fff; background-color: #00bod4;)
+        #section2 (padding-top:50px;
+        height:500px;color: #fff; background-color: #009688;)
+    </style>
+</head>
+<body data-spy="scroll"
+data-target=".navbar" data-offset="50">
+<div class="container-fluid"
+       style="background-color:#F44336;
+        color:#fff;height:200px;">
+    <h1>eyufri biurhfhs esrf</h1>
+    <h3>hjedb fhewgrbikwerf esu</h3>
+    <p>njrf  iaeh YGI fd itrbvnbtyfi dfti fjhbv dr kfchbg
+        ktujh;diftj  YGGG  YDL NBik HGB</p>
+    <p>jktggoi TRFV JUHJN vffkugbCUGJ juhy  juhg
+        erjhidfuh jdrnh juyho0 polgfhid </p>
+</div>
+  <nav class="navbar navbar-inverse"
+       data-spy="affix" data-offset-top="197">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button"
+                    class="navbar-toggle"
+                    data-target="#myHavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+               </button>
+              <a class="navbar-brand" href="#">
+                WebSitleName</a>
+           </div>
+       <div>
+      <div class="collapse navbar-collapse"
+         id="maNavbar">
+          <ul class="navbar-nav">
+              <li><a href="#section1">
+                Section 1</a></li>
+              <li><a href="#section2">
+                Section 2</a></li>
+              <li><a href="#section3">
+                Section 3</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle"
+                     data-toggle="dropdoun"
+                     href="#">Section 4
+                   <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="#section41">
+                      SEction 4-1</a></li>
+                     <li><a href="#section42">
+                      SEction 4-2</a></li>
+                  </ul>
+               </li>
+           </ul>
+       </div>
+       </div>
+  </nav>
+ <div id="sectionl" class="container-fluid">
+     <h1>Section 1</h1>
+     <p>d n juHNjun jkHHIO ujB JUhy bvhyujGB jmhgb
+         N BIKYG Hjugbuffvc !
+     </p>
+     <p>DY juygik;d kjhd kig ld ; fgjf fkj
+        d bhbg jdkn g dg nfj ngh f
+     </p>
+ </div>
+<div id="section2" class="container-fluid">
+    <h1>Section 2</h1>
+    <p>HGT dfuyhsd jfghjs ujsb v shidu skidjf k,jhfiur rjri
+      smer fretg dh hjggggggg gjn
+        cffhfcghnj  vghjnmhv!</p>
+    <p>kdg sjdhn ikf sb f hns
+        sdbhvsjn ,sdjrhgt  </p>
+</div>
+<div id="section4l" class="container-fluid">
+    <h1>Section 4 Submenu 1</h1>
+    <p> kjfdonjhgfnjiojfhmj fdkgi dxfjg skdj</p>
+    <p> fjg kjdfnhg jdfgn </p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('body').scrollspy(
+            {target: ".navbar", offset: 50});
+        $("#myNavbar a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
